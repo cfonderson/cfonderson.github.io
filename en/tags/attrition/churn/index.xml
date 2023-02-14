@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Attrition/Churn on Cynthia Fonderson</title>
+    <link>https://cfonderson.github.io/en/tags/attrition/churn/</link>
+    <description>Recent content in Attrition/Churn on Cynthia Fonderson</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://cfonderson.github.io/en/tags/attrition/churn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Predicting Attrition in Healthcare Workers</title>
+      <link>https://cfonderson.github.io/en/projects/work9/</link>
+      <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/en/projects/work9/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

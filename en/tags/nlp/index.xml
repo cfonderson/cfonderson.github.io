@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NLP on Cynthia Fonderson</title>
+    <link>https://cfonderson.github.io/en/tags/nlp/</link>
+    <description>Recent content in NLP on Cynthia Fonderson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 03 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cfonderson.github.io/en/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building &amp; Optimizing A Movie Recommendation System</title>
+      <link>https://cfonderson.github.io/en/projects/work4/</link>
+      <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/en/projects/work4/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

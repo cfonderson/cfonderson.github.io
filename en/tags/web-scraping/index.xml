@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Scraping on Cynthia Fonderson</title>
+    <link>https://cfonderson.github.io/en/tags/web-scraping/</link>
+    <description>Recent content in Web Scraping on Cynthia Fonderson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 02 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cfonderson.github.io/en/tags/web-scraping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Investigating the Global Impact of COVID-19</title>
+      <link>https://cfonderson.github.io/en/projects/work1/</link>
+      <pubDate>Sun, 02 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/en/projects/work1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

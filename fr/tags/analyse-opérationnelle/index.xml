@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analyse Opérationnelle on Cynthia Fonderson</title>
+    <link>https://cfonderson.github.io/fr/tags/analyse-op%C3%A9rationnelle/</link>
+    <description>Recent content in Analyse Opérationnelle on Cynthia Fonderson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cfonderson.github.io/fr/tags/analyse-op%C3%A9rationnelle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Le coût de l&#39;assurance-maladie</title>
+      <link>https://cfonderson.github.io/fr/projects/work8/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/fr/projects/work8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prévision de l&#39;attrition des clients pour une société de télécommunications</title>
+      <link>https://cfonderson.github.io/fr/projects/work5/</link>
+      <pubDate>Tue, 15 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/fr/projects/work5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Évaluer la performance des ventes d&#39;une entreprise de vélos.</title>
+      <link>https://cfonderson.github.io/fr/projects/work3/</link>
+      <pubDate>Wed, 26 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/fr/projects/work3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analyse de données pour la gestion d&#39;entreprise</title>
+      <link>https://cfonderson.github.io/fr/projects/work2/</link>
+      <pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/fr/projects/work2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analyse des transactions de la clientèle d&#39;une épicerie</title>
+      <link>https://cfonderson.github.io/fr/projects/work6/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/fr/projects/work6/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

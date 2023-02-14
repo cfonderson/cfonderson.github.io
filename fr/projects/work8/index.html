@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fr" itemscope itemtype="http://schema.org/WebPage"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.ico">
+
+  <title>
+  Le coût de l&#39;assurance-maladie - Cynthia Fonderson
+  </title>
+  <meta name="description" content="" />
+  <meta name="author" content="Cynthia Fonderson" />
+  <meta name="generator" content="Hugo 0.110.0"><link
+    rel="stylesheet"
+    href="https://cfonderson.github.io/css/styles.min.e16cfd2cc707c2dc5b2a1e7069921b7ea0337f721f89600f333ef65c7e93419e.css"
+    integrity="sha256-4Wz9LMcHwtxbKh5waZIbfqAzf3IfiWAPMz72XH6TQZ4="
+  />
+  
+  
+
+  <meta property="og:title" content="Le coût de l&#39;assurance-maladie" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cfonderson.github.io/fr/projects/work8/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2022-12-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-12-12T00:00:00+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Le coût de l&#39;assurance-maladie"/>
+<meta name="twitter:description" content=""/>
+
+  <meta itemprop="name" content="Le coût de l&#39;assurance-maladie">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-12-12T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2022-12-12T00:00:00+00:00" />
+<meta itemprop="wordCount" content="257">
+<meta itemprop="keywords" content="Analyse Opérationnelle,Régression,Assurance," />
+
+  
+  <meta name="lang" content="fr" />
+  
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-between md:justify-between gap-4 flex-wrap p-6 mx-auto relative">
+  <a href="https://cfonderson.github.io/fr/" class="capitalize font-extrabold text-2xl">
+    
+    <img src="/logo.png" alt="Cynthia Fonderson" class="h-8 max-w-full" />
+    
+  </a>
+  <button class="mobile-menu-button md:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <line x1="4" y1="8" x2="20" y2="8" />
+      <line x1="4" y1="16" x2="20" y2="16" />
+    </svg>
+  </button>
+  <ul class="mobile-menu absolute z-10 px-6 pb-6 md:p-0 top-full left-0 w-full md:w-auto md:relative hidden md:flex flex-col md:flex-row items-end md:items-center gap-4 lg:gap-6 bg-white dark:bg-gray-800">
+
+    
+    <li><a href="/fr/page/about/">À propos</a></li>
+    
+    <li><a href="/fr/projects">Projets</a></li>
+    
+    <li><a href="/fr/page/resume">Résumé</a></li>
+    
+    <li><a href="/fr/tags">Tags</a></li>
+    
+
+    
+    
+    <li class="flex items-center">
+      
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <circle cx="12" cy="12" r="9" />
+        <line x1="3.6" y1="9" x2="20.4" y2="9" />
+        <line x1="3.6" y1="15" x2="20.4" y2="15" />
+        <path d="M11.5 3a17 17 0 0 0 0 18" />
+        <path d="M12.5 3a17 17 0 0 1 0 18" />
+      </svg>
+      <a href="/en" lang="en">English</a>
+      
+      
+      
+      
+    </li>
+    
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header>
+<main class="flex-1">
+  
+  
+
+  
+  <div class="relative max-w-5xl mx-auto px-4">
+    <img src="/projects/hcprem.jpeg" class="rounded-lg shadow-sm w-full object-contain" />
+    
+    <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+      
+  
+    12. Décembre 2022
+  
+
+
+    </div>
+    
+  </div>
+  
+
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+    <h1 class="text-2xl font-bold mb-2">Le coût de l&#39;assurance-maladie</h1>
+    
+    <h5 class="text-sm flex items-center flex-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      Posté le 
+  
+    12. Décembre 2022
+  
+
+
+      
+        &nbsp;&bull;&nbsp;
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      2&nbsp;minutes
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      257&nbsp;mots
+      
+    </h5>
+    
+
+    
+
+    <p>L&rsquo;objectif de ce projet est de prédire le coût de l&rsquo;assurance maladie encouru par les individus en fonction de leur âge, de leur sexe, de leur IMC, du nombre d&rsquo;enfants, de leurs habitudes tabagiques et de leur localisation. L&rsquo;ensemble de données a été exporté de Kaggle et conservé par l&rsquo;utilisateur Miri Choi.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">age</td>
+<td style="text-align:left">Âge du bénéficiaire principal</td>
+</tr>
+<tr>
+<td style="text-align:left">sex</td>
+<td style="text-align:left">Sexe du contractant d&rsquo;assurance, femme, homme</td>
+</tr>
+<tr>
+<td style="text-align:left">bmi</td>
+<td style="text-align:left">Indice de masse corporelle, permettant de comprendre le corps, les poids qui sont relativement élevés ou faibles par rapport à la taille, indice objectif du poids corporel (kg / m ^ 2) utilisant le rapport de la taille au poids, idéalement 18,5 à 24,9</td>
+</tr>
+<tr>
+<td style="text-align:left">children</td>
+<td style="text-align:left">Nombre d&rsquo;enfants couverts par l&rsquo;assurance maladie / Nombre de personnes à charge</td>
+</tr>
+<tr>
+<td style="text-align:left">smoker</td>
+<td style="text-align:left">Fumeurs</td>
+</tr>
+<tr>
+<td style="text-align:left">region</td>
+<td style="text-align:left">Zone de résidence du bénéficiaire aux États-Unis, nord-est, sud-est, sud-ouest, nord-ouest</td>
+</tr>
+<tr>
+<td style="text-align:left">charges</td>
+<td style="text-align:left">Frais médicaux individuels facturés par l&rsquo;assurance maladie</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /></p>
+<h3 id="plan-du-projet">Plan du projet</h3>
+<ol>
+<li>Ingestion et nettoyage des données</li>
+<li>Ingénierie des caractéristiques</li>
+<li>Évaluation des modèles de régression linéaire</li>
+<li>Résumé</li>
+</ol>
+<br />
+<h3 id="résumé-du-projet">Résumé du projet</h3>
+<p>Après l&rsquo;ingestion et le nettoyage des données, les variables catégorielles ont été encodées à l&rsquo;aide de valeurs numériques. Une analyse exploratoire des données a également été menée, afin de mieux comprendre l&rsquo;ensemble des données.
+<img src="/projects/p8_corr_mat.png" alt="corr_mat"></p>
+<p>Ensuite, un modèle de régression linéaire a été utilisé pour prédire les primes de soins de santé en fonction des caractéristiques pertinentes. Le modèle de régression linéaire a donné des résultats modérément bons (précision ~75%), l&rsquo;utilisation d&rsquo;un réseau neuronal artificiel (entraîné pendant 100 époques) a donné de meilleurs résultats avec une précision d&rsquo;environ 85%.
+<img src="/projects/ann_reg.png" alt="regression"></p>
+<blockquote>
+<p><a href="https://github.com/cfonderson/Portfolio/tree/main/Data%20Science/Insurance%20Premium%20Prediction" target="_blank" rel="noopener">Projet complet</a>
+</p>
+</blockquote>
+  </article>
+<div class="px-2 mb-2">
+  
+  <script src="https://giscus.app/client.js"
+    data-repo=""
+    data-repo-id=""
+    data-category=""
+    data-category-id=""
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="fr"
+    crossorigin="anonymous"
+    async>
+  </script>
+  
+</div>
+<div class="bg-red-100 dark:bg-gray-900">
+  <div class="container px-4 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+    <div>
+      <div class="text-2xl font-bold mb-2">Contact me / Contactez-moi</div>
+      <p class="opacity-60">I work on everything data / J&#39;aime tout ce qui concerne la science des données.</p>
+    </div>
+
+    <ul class="flex justify-center gap-x-3 flex-wrap gap-y-2">
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://linkedin.com/in/cynthiafonderson/"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <line x1="8" y1="11" x2="8" y2="16" />
+            <line x1="8" y1="8" x2="8" y2="8.01" />
+            <line x1="12" y1="16" x2="12" y2="11" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://github.com/cfonderson/portfolio"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="mailto:cynthiafonderson@gmail.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Medium"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <path d="M8 9h1l3 3l3 -3h1" />
+            <line x1="8" y1="15" x2="10" y2="15" />
+            <line x1="14" y1="15" x2="16" y2="15" />
+            <line x1="9" y1="9" x2="9" y2="15" />
+            <line x1="15" y1="9" x2="15" y2="15" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+    </ul>
+  </div>
+</div>
+
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+    
+    Copyright © 2023 - Cynthia Fonderson · All rights reserved
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://cfonderson.github.io/js/scripts.min.js"></script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const darkStorage = localStorage.getItem('darkmode');
+  const isBrowserDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (!darkStorage && isBrowserDark) {
+    document.documentElement.classList.add('dark');
+  }
+
+  if (darkStorage && darkStorage === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+
+
+<script>
+  const mobileMenuButton = document.querySelector('.mobile-menu-button')
+  const mobileMenu = document.querySelector('.mobile-menu')
+  function toggleMenu() {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+  }
+  if(mobileMenu && mobileMenuButton){
+    mobileMenuButton.addEventListener('click', toggleMenu)
+  }
+</script>
+</body>
+</html>

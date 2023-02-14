@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Business Analytics on Cynthia Fonderson</title>
+    <link>https://cfonderson.github.io/en/tags/business-analytics/</link>
+    <description>Recent content in Business Analytics on Cynthia Fonderson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cfonderson.github.io/en/tags/business-analytics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Cost of Health Care Insurance</title>
+      <link>https://cfonderson.github.io/en/projects/work8/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/en/projects/work8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Customer Attrition Prediction for a Telecom Company</title>
+      <link>https://cfonderson.github.io/en/projects/work5/</link>
+      <pubDate>Tue, 15 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/en/projects/work5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analyzing Trends in Customer Transactions at a Grocery Store</title>
+      <link>https://cfonderson.github.io/en/projects/work6/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/en/projects/work6/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

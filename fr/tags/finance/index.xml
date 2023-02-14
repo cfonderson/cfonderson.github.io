@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Finance on Cynthia Fonderson</title>
+    <link>https://cfonderson.github.io/fr/tags/finance/</link>
+    <description>Recent content in Finance on Cynthia Fonderson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 15 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://cfonderson.github.io/fr/tags/finance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prévision de la fraude financière</title>
+      <link>https://cfonderson.github.io/fr/projects/work11/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/fr/projects/work11/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>L&#39;analyse des risques dans les services bancaires et financiers</title>
+      <link>https://cfonderson.github.io/fr/projects/work10/</link>
+      <pubDate>Sun, 08 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/fr/projects/work10/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

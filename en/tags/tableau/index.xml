@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tableau on Cynthia Fonderson</title>
+    <link>https://cfonderson.github.io/en/tags/tableau/</link>
+    <description>Recent content in Tableau on Cynthia Fonderson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 26 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cfonderson.github.io/en/tags/tableau/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Evaluating Sales Perfomance for a Bike Company</title>
+      <link>https://cfonderson.github.io/en/projects/work3/</link>
+      <pubDate>Wed, 26 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/en/projects/work3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investigating the Global Impact of COVID-19</title>
+      <link>https://cfonderson.github.io/en/projects/work1/</link>
+      <pubDate>Sun, 02 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/en/projects/work1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

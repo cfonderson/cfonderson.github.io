@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analytiques Resource Humaine on Cynthia Fonderson</title>
+    <link>https://cfonderson.github.io/fr/tags/analytiques-resource-humaine/</link>
+    <description>Recent content in Analytiques Resource Humaine on Cynthia Fonderson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 20 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cfonderson.github.io/fr/tags/analytiques-resource-humaine/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prévision de l&#39;attrition chez les travailleurs de la Santé Publique</title>
+      <link>https://cfonderson.github.io/fr/projects/work9/</link>
+      <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/fr/projects/work9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analyse de données pour la gestion d&#39;entreprise</title>
+      <link>https://cfonderson.github.io/fr/projects/work2/</link>
+      <pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://cfonderson.github.io/fr/projects/work2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
